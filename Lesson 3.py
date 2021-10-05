@@ -12,8 +12,8 @@ elif 86400 > duration >= 3600:
     s = duration % 60
     m = m % 60
     print(h, 'час', m, 'мин', s, 'сек')
-elif duration >= 86400:
+else:
     s = duration % 60
     m = m % 60
-    h = h // 7
+    h = duration % 86400 // 3600
     print(d, 'дн', h, 'час', m, 'мин', s, 'сек')
