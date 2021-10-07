@@ -1,15 +1,22 @@
 # Задача 2
-nums = list(range(1, 1000, 2))
+nums = list(range(1, 1001, 2))
 coubs = [i**3 for i in nums]
-# print(coubs)
-
-
-# temp = [sum(map(int, str(n))) for n in coubs]
-# while
-#     temp.append
-#     coubs.remove
+print(coubs)
+temp = [sum(map(int, str(i))) for i in coubs]
 # print(temp)
 
+sum_of_digits = []
+sum_of_digits_17 = []
+
+# for i in temp:
+#     if i % 7 == 0:
+#         sum_of_digits.append(i)
+# # print(sum(sum_of_digits))
+# # if (i+17) % 7 == 0:
+# #     sum_of_digits_17 += (i+17)
+
+# # сумму чисел из coubs,
+# # сумма цифр которых делится нацело на 7
 
 # sum_of_digits = 0
 # sum_of_digits_17 = 0
