@@ -1,6 +1,6 @@
 # Задача 3
 # Вариант выполнения 1
-one_end = list(range(21, 100, 10))+[1]
+one_end = list(range(21, 92, 10))+[1]
 two_end = list(range(2, 5))
 exceptions = list(range(11, 15))
 n = 1
