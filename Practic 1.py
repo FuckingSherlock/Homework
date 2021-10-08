@@ -1,19 +1,17 @@
 # Задача 1
 duration = int(input())
-m = duration // 60
-h = duration // 3600
-d = duration // 86400
+second = duration % 60
+minutes = duration % 60
+hours = duration // 3600
+days = duration // 86400
 if duration < 60:
     print(duration, 'сек')
 elif 3600 > duration >= 60:
-    s = duration % 60
-    print(m, 'мин', s, 'сек')
+    minutes = duration // 60
+    print(minutes, 'мин', second, 'сек')
 elif 86400 > duration >= 3600:
-    s = duration % 60
-    m = m % 60
-    print(h, 'час', m, 'мин', s, 'сек')
+    minutes = duration // 60 % 60
+    print(hours, 'час', minutes, 'мин', second, 'сек')
 else:
-    s = duration % 60
-    m = m % 60
-    h = duration % 86400 // 3600
-    print(d, 'дн', h, 'час', m, 'мин', s, 'сек')
+    hours = duration % 86400 // 3600
+    print(days, 'дн', hours, 'час', minutes, 'мин', second, 'сек')
