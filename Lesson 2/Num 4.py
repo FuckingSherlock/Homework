@@ -3,4 +3,4 @@ workers = ['инженер-конструктор Игорь', 'главный �
 for i in workers:
     splited = ''.join(i).split(' ')
     name = splited.pop(-1)
-    print('Привет,', name.title()+'!')
+    print(f'Привет, {name.title()}!')
