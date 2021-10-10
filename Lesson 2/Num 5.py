@@ -20,10 +20,11 @@ def prices(price_list):
 prices(price)
 print('id до сортировки =', id(price), '\n')
 price.sort()
-price.reverse()
 print('id после сортировки =', id(price), '\n')
 prices(price)
 price_decreasing = sorted(price, reverse=True)
+print(price_decreasing)
+price.reverse()
 price = price[0:5]
 price.reverse()
 prices(price)
