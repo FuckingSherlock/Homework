@@ -1,5 +1,5 @@
 workers = ['инженер-конструктор Игорь', 'главный бухгалтер МАРИНА',
            'токарь высшего разряда нИКОЛАй', 'директор аэлита']
 for i in workers:
-    splited = i.split(' ')
-    print(f'Привет, {splited.pop().title()}!')
+    i = i.split(' ')
+    print(f'Привет, {i.pop().title()}!')
