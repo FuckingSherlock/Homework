@@ -8,6 +8,7 @@ while index in range(len(info)):
         elif (int(info[index]) or (-int(info[index]))) < 10:
             info[index] = f'{info[index][:1]}0{info[index][1:]}'
         info[index] = ''.join(['"', info[index], '"', ' '])
-    info[index] = ''.join([info[index], ' '])
+    else:
+        info[index] = ''.join([info[index], ' '])
     index = index + 1
 print(''.join(info))
