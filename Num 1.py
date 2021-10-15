@@ -4,10 +4,9 @@ nums = {'zero': 'ноль', 'one': 'один', 'two': 'два', 'three': 'три
 
 def num_translate(eng):
     if eng in nums:
-        ru = nums[eng]
-        print(ru)
+        print(nums[eng])
     else:
-        print(None)
+        return None
 
 
 num_translate(input())

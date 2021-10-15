@@ -3,13 +3,12 @@ nums = {'zero': 'ноль', 'one': 'один', 'two': 'два', 'three': 'три
 
 
 def num_translate_adv(word):
-    word_lower = ''.join(word).lower()
     if word in nums:
         print(nums[word])
-    elif word_lower in nums:
-        print(nums[word_lower].title())
+    elif str(word).lower() in nums:
+        print(nums[str(word).lower()].title())
     else:
-        print(None)
+        return None
 
 
-num_translate_adv(str(input()))
+num_translate_adv(input())
